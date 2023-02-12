@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Weather</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div>
+    <section class="top-banner">
+      <div class="container">
+        <h1 class="heading">Simple Weather App</h1>
+        <form>
+          <input type="text" placeholder="Search for a city" autofocus>
+          <button type="submit">SUBMIT</button>
+          <span class="msg"></span>
+        </form>
+      </div>
+    </section>
+    <section class="ajax-section">
+      <div class="container">
+        <ul class="cities"></ul>
+      </div>
+    </section>
+    <div class="container-weather-iframe">
+      <div class="weather-iframe widget">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/55d7637d62/moscow/" data-label_1="MOSCOW" data-label_2="WEATHER" data-theme="original" >MOSCOW WEATHER</a>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/40d1844d50/yerevan/" data-label_1="YEREVAN" data-label_2="WEATHER" data-theme="original" >YEREVAN WEATHER</a>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="NEW YORK" data-label_2="WEATHER" data-theme="original" >NEW YORK WEATHER</a>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/25d2055d27/dubai/" data-label_1="DUBAI" data-label_2="WEATHER" data-theme="original" >DUBAI WEATHER</a>
+      </div>
+      <div class="weather-iframe">
+        <iframe src="https://www.meteoblue.com/en/weather/maps/widget/yerevan_armenia_616052?windAnimation=0&windAnimation=1&gust=0&gust=1&satellite=0&satellite=1&cloudsAndPrecipitation=0&cloudsAndPrecipitation=1&temperature=0&temperature=1&sunshine=0&sunshine=1&extremeForecastIndex=0&extremeForecastIndex=1&geoloc=fixed&tempunit=C&windunit=km%252Fh&lengthunit=metric&zoom=5&autowidth=auto"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 100%; height: 839px"></iframe>
+        <div>
+          <a href="https://www.meteoblue.com/en/weather/maps/yerevan_armenia_616052?utm_source=weather_widget&utm_medium=linkus&utm_content=map&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+  <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+  </script>
+</body>
+
+</html>
